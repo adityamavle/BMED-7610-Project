@@ -19,7 +19,6 @@ The local dataset and generated outputs are intentionally ignored by Git.
 
 - `scripts/`: runnable entry points for download, baseline fitting, inspection, and feature-space prototyping
 - `src/`: small project package utilities
-- `agents.md`: project-specific working rules and scope constraints
 - `sources.md`: reference links for the tutorial and dataset
 
 ## Baseline Workflow
@@ -67,4 +66,3 @@ C:\Users\adity\anaconda3\envs\neuro_env\python scripts/run_baseline.py
 
 - The current code targets `S01`.
 - The repo does not commit dataset files or generated results under `data/` or `outputs/`.
-- New feature-space experiments should follow the constraints in `agents.md`.
