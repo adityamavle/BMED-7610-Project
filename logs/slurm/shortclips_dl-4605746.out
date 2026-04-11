@@ -1,0 +1,22 @@
+---------------------------------------
+Begin Slurm Prolog: Apr-05-2026 20:32:56
+Job ID:    4605746
+User ID:   amavle3
+Account:   cse
+Job name:  shortclips_dl
+Partition: coc-cpu
+QOS:       coc-ice
+---------------------------------------
+mkdir: cannot create directory ‘/scratch/amavle3’: Permission denied
+---------------------------------------
+Begin Slurm Epilog: Apr-05-2026 20:32:57
+Job ID:        4605746
+User ID:       amavle3
+Account:       cse
+Job name:      shortclips_dl
+Resources:     cpu=4,mem=32G,node=1
+Rsrc Used:     cput=00:00:16,vmem=0,walltime=00:00:04,mem=17460K,energy_used=0
+Partition:     coc-cpu
+QOS:           coc-ice
+Nodes:         atl1-1-01-005-2-1
+---------------------------------------

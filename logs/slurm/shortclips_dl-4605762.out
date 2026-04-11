@@ -1,0 +1,86 @@
+---------------------------------------
+Begin Slurm Prolog: Apr-05-2026 20:36:48
+Job ID:    4605762
+User ID:   amavle3
+Account:   cse
+Job name:  shortclips_dl
+Partition: coc-cpu
+QOS:       coc-ice
+---------------------------------------
+It is highly recommended to configure Git before using DataLad. Set both 'user.name' and 'user.email' configuration variables.
+[INFO] Attempting a clone into /home/hice1/amavle3/scratch/voxelwise_tutorials_data/shortclips 
+[INFO] Attempting to clone from https://gin.g-node.org/gallantlab/shortclips to /home/hice1/amavle3/scratch/voxelwise_tutorials_data/shortclips 
+[INFO] Attempting to clone from https://gin.g-node.org/gallantlab/shortclips/.git to /home/hice1/amavle3/scratch/voxelwise_tutorials_data/shortclips 
+[INFO] Completed clone attempts for Dataset(/home/hice1/amavle3/scratch/voxelwise_tutorials_data/shortclips) 
+/home/hice1/amavle3/scratch/voxelwise_tutorials_data/shortclips
+install(error): /home/hice1/amavle3/scratch/voxelwise_tutorials_data/shortclips (dataset) [Failed to clone from any candidate source URL. Encountered errors per each url were:
+- https://gin.g-node.org/gallantlab/shortclips
+  CommandError: 'git -c diff.ignoreSubmodules=none -c core.quotepath=false clone --progress https://gin.g-node.org/gallantlab/shortclips /home/hice1/amavle3/scratch/voxelwise_tutorials_data/shortclips' failed with exitcode 128 [err: 'Cloning into '/home/hice1/amavle3/scratch/voxelwise_tutorials_data/shortclips'...
+fatal: unable to access 'https://gin.g-node.org/gallantlab/shortclips/': Problem with the SSL CA cert (path? access rights?)']
+- https://gin.g-node.org/gallantlab/shortclips/.git
+  CommandError: 'git -c diff.ignoreSubmodules=none -c core.quotepath=false clone --progress https://gin.g-node.org/gallantlab/shortclips/.git /home/hice1/amavle3/scratch/voxelwise_tutorials_data/shortclips' failed with exitcode 128 [err: 'Cloning into '/home/hice1/amavle3/scratch/voxelwise_tutorials_data/shortclips'...
+fatal: unable to access 'https://gin.g-node.org/gallantlab/shortclips/.git/': Problem with the SSL CA cert (path? access rights?)']]
+Traceback (most recent call last):
+  File "/home/hice1/amavle3/BMED-7610-Project/scripts/download_shortclips.py", line 36, in <module>
+    main()
+  File "/home/hice1/amavle3/BMED-7610-Project/scripts/download_shortclips.py", line 27, in main
+    local_filename = download_datalad(
+                     ^^^^^^^^^^^^^^^^^
+  File "/storage/ice1/1/1/amavle3/envs/neuro_env/lib/python3.11/site-packages/voxelwise_tutorials/io.py", line 124, in download_datalad
+    dataset = datalad.api.install(path=destination, source=source)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/storage/ice1/1/1/amavle3/envs/neuro_env/lib/python3.11/site-packages/datalad/interface/base.py", line 772, in eval_func
+    return return_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/storage/ice1/1/1/amavle3/envs/neuro_env/lib/python3.11/site-packages/datalad/interface/base.py", line 762, in return_func
+    results = list(results)
+              ^^^^^^^^^^^^^
+  File "/storage/ice1/1/1/amavle3/envs/neuro_env/lib/python3.11/site-packages/datalad/interface/base.py", line 939, in _execute_command_
+    raise IncompleteResultsError(
+datalad.support.exceptions.IncompleteResultsError: Command did not complete successfully. 1 failed:
+[{'action': 'install',
+  'message': ('Failed to clone from any candidate source URL. Encountered '
+              'errors per each url were:\n'
+              '- %s',
+              'https://gin.g-node.org/gallantlab/shortclips\n'
+              "  CommandError: 'git -c diff.ignoreSubmodules=none -c "
+              'core.quotepath=false clone --progress '
+              'https://gin.g-node.org/gallantlab/shortclips '
+              "/home/hice1/amavle3/scratch/voxelwise_tutorials_data/shortclips' "
+              "failed with exitcode 128 [err: 'Cloning into "
+              "'/home/hice1/amavle3/scratch/voxelwise_tutorials_data/shortclips'...\n"
+              'fatal: unable to access '
+              "'https://gin.g-node.org/gallantlab/shortclips/': Problem with "
+              "the SSL CA cert (path? access rights?)']\n"
+              '- https://gin.g-node.org/gallantlab/shortclips/.git\n'
+              "  CommandError: 'git -c diff.ignoreSubmodules=none -c "
+              'core.quotepath=false clone --progress '
+              'https://gin.g-node.org/gallantlab/shortclips/.git '
+              "/home/hice1/amavle3/scratch/voxelwise_tutorials_data/shortclips' "
+              "failed with exitcode 128 [err: 'Cloning into "
+              "'/home/hice1/amavle3/scratch/voxelwise_tutorials_data/shortclips'...\n"
+              'fatal: unable to access '
+              "'https://gin.g-node.org/gallantlab/shortclips/.git/': Problem "
+              "with the SSL CA cert (path? access rights?)']"),
+  'path': '/home/hice1/amavle3/scratch/voxelwise_tutorials_data/shortclips',
+  'refds': None,
+  'source': {'default_destpath': 'shortclips',
+             'giturl': 'https://gin.g-node.org/gallantlab/shortclips/.git',
+             'source': 'https://gin.g-node.org/gallantlab/shortclips',
+             'type': 'giturl',
+             'version': None},
+  'source_url': 'https://gin.g-node.org/gallantlab/shortclips',
+  'status': 'error',
+  'type': 'dataset'}]
+---------------------------------------
+Begin Slurm Epilog: Apr-05-2026 20:37:31
+Job ID:        4605762
+User ID:       amavle3
+Account:       cse
+Job name:      shortclips_dl
+Resources:     cpu=4,mem=32G,node=1
+Rsrc Used:     cput=00:03:04,vmem=0,walltime=00:00:46,mem=307592K,energy_used=0
+Partition:     coc-cpu
+QOS:           coc-ice
+Nodes:         atl1-1-01-005-2-1
+---------------------------------------

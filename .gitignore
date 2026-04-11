@@ -16,11 +16,11 @@ env/
 Thumbs.db
 
 # Local project instructions
-agents.md
+AGENTS.md
 
 # Local dataset and generated outputs
 /data/
-/outputs/
+#/outputs/
 
 # Local tool caches
 .datalad/

@@ -1,0 +1,70 @@
+---------------------------------------
+Begin Slurm Prolog: Apr-05-2026 20:43:28
+Job ID:    4605774
+User ID:   amavle3
+Account:   cse
+Job name:  shortclips_dl
+Partition: coc-cpu
+QOS:       coc-ice
+---------------------------------------
+It is highly recommended to configure Git before using DataLad. Set both 'user.name' and 'user.email' configuration variables.
+[INFO] Attempting a clone into /home/hice1/amavle3/scratch/voxelwise_tutorials_data/shortclips 
+[INFO] Attempting to clone from https://gin.g-node.org/gallantlab/shortclips to /home/hice1/amavle3/scratch/voxelwise_tutorials_data/shortclips 
+[INFO] Start enumerating objects 
+[INFO] Start counting objects 
+[INFO] Start compressing objects 
+[INFO] Start receiving objects 
+[INFO] Start resolving deltas 
+[INFO] Completed clone attempts for Dataset(/home/hice1/amavle3/scratch/voxelwise_tutorials_data/shortclips) 
+[INFO] access to 1 dataset sibling gin-src not auto-enabled, enable with:
+| 		datalad siblings -d "/storage/ice1/1/1/amavle3/voxelwise_tutorials_data/shortclips" enable -s gin-src 
+/home/hice1/amavle3/scratch/voxelwise_tutorials_data/shortclips
+install(ok): /home/hice1/amavle3/scratch/voxelwise_tutorials_data/shortclips (dataset)
+get(ok): features/motion_energy.hdf (file) [from wasabi...]
+/home/hice1/amavle3/scratch/voxelwise_tutorials_data/shortclips/features/motion_energy.hdf
+get(ok): features/wordnet.hdf (file) [from wasabi...]
+/home/hice1/amavle3/scratch/voxelwise_tutorials_data/shortclips/features/wordnet.hdf
+get(ok): mappers/S01_mappers.hdf (file) [from wasabi...]
+/home/hice1/amavle3/scratch/voxelwise_tutorials_data/shortclips/mappers/S01_mappers.hdf
+get(ok): responses/S01_responses.hdf (file) [from wasabi...]
+/home/hice1/amavle3/scratch/voxelwise_tutorials_data/shortclips/responses/S01_responses.hdf
+It is highly recommended to configure Git before using DataLad. Set both 'user.name' and 'user.email' configuration variables.
+/home/hice1/amavle3/scratch/voxelwise_tutorials_data/shortclips
+get(ok): stimuli/train_00.hdf (file) [from wasabi...]
+/home/hice1/amavle3/scratch/voxelwise_tutorials_data/shortclips/stimuli/train_00.hdf
+get(ok): stimuli/train_01.hdf (file) [from wasabi...]
+/home/hice1/amavle3/scratch/voxelwise_tutorials_data/shortclips/stimuli/train_01.hdf
+get(ok): stimuli/train_02.hdf (file) [from wasabi...]
+/home/hice1/amavle3/scratch/voxelwise_tutorials_data/shortclips/stimuli/train_02.hdf
+get(ok): stimuli/train_03.hdf (file) [from wasabi...]
+/home/hice1/amavle3/scratch/voxelwise_tutorials_data/shortclips/stimuli/train_03.hdf
+get(ok): stimuli/train_04.hdf (file) [from wasabi...]
+/home/hice1/amavle3/scratch/voxelwise_tutorials_data/shortclips/stimuli/train_04.hdf
+get(ok): stimuli/train_05.hdf (file) [from wasabi...]
+/home/hice1/amavle3/scratch/voxelwise_tutorials_data/shortclips/stimuli/train_05.hdf
+get(ok): stimuli/train_06.hdf (file) [from wasabi...]
+/home/hice1/amavle3/scratch/voxelwise_tutorials_data/shortclips/stimuli/train_06.hdf
+get(ok): stimuli/train_07.hdf (file) [from wasabi...]
+/home/hice1/amavle3/scratch/voxelwise_tutorials_data/shortclips/stimuli/train_07.hdf
+get(ok): stimuli/train_08.hdf (file) [from wasabi...]
+/home/hice1/amavle3/scratch/voxelwise_tutorials_data/shortclips/stimuli/train_08.hdf
+get(ok): stimuli/train_09.hdf (file) [from wasabi...]
+/home/hice1/amavle3/scratch/voxelwise_tutorials_data/shortclips/stimuli/train_09.hdf
+get(ok): stimuli/train_10.hdf (file) [from wasabi...]
+/home/hice1/amavle3/scratch/voxelwise_tutorials_data/shortclips/stimuli/train_10.hdf
+get(ok): stimuli/train_11.hdf (file) [from wasabi...]
+/home/hice1/amavle3/scratch/voxelwise_tutorials_data/shortclips/stimuli/train_11.hdf
+get(ok): stimuli/test.hdf (file) [from wasabi...]
+/home/hice1/amavle3/scratch/voxelwise_tutorials_data/shortclips/stimuli/test.hdf
+---------------------------------------
+Begin Slurm Epilog: Apr-05-2026 21:42:27
+Job ID:        4605774
+User ID:       amavle3
+Account:       cse
+Job name:      shortclips_dl
+Resources:     cpu=4,mem=32G,node=1
+Rsrc Used:     cput=03:56:08,vmem=0,walltime=00:59:02,mem=12855588K,energy_used=0
+Partition:     coc-cpu
+QOS:           coc-ice
+Nodes:         atl1-1-01-005-3-1
+---------------------------------------

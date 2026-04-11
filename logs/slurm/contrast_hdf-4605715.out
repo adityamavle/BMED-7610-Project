@@ -1,0 +1,43 @@
+---------------------------------------
+Begin Slurm Prolog: Apr-05-2026 20:20:32
+Job ID:    4605715
+User ID:   amavle3
+Account:   cse
+Job name:  contrast_hdf
+Partition: coc-cpu
+QOS:       coc-ice
+---------------------------------------
+Traceback (most recent call last):
+  File "/home/hice1/amavle3/BMED-7610-Project/scripts/generate_contrast_hdf.py", line 349, in <module>
+    main()
+  File "/home/hice1/amavle3/BMED-7610-Project/scripts/generate_contrast_hdf.py", line 267, in main
+    stimulus_paths = validate_inputs(data_home=data_home, run_names=run_names)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hice1/amavle3/BMED-7610-Project/scripts/generate_contrast_hdf.py", line 183, in validate_inputs
+    raise FileNotFoundError(
+FileNotFoundError: Missing stimulus HDF files. Download them before building contrast.hdf:
+- /home/hice1/amavle3/voxelwise_tutorials_data/shortclips/stimuli/train_00.hdf
+- /home/hice1/amavle3/voxelwise_tutorials_data/shortclips/stimuli/train_01.hdf
+- /home/hice1/amavle3/voxelwise_tutorials_data/shortclips/stimuli/train_02.hdf
+- /home/hice1/amavle3/voxelwise_tutorials_data/shortclips/stimuli/train_03.hdf
+- /home/hice1/amavle3/voxelwise_tutorials_data/shortclips/stimuli/train_04.hdf
+- /home/hice1/amavle3/voxelwise_tutorials_data/shortclips/stimuli/train_05.hdf
+- /home/hice1/amavle3/voxelwise_tutorials_data/shortclips/stimuli/train_06.hdf
+- /home/hice1/amavle3/voxelwise_tutorials_data/shortclips/stimuli/train_07.hdf
+- /home/hice1/amavle3/voxelwise_tutorials_data/shortclips/stimuli/train_08.hdf
+- /home/hice1/amavle3/voxelwise_tutorials_data/shortclips/stimuli/train_09.hdf
+- /home/hice1/amavle3/voxelwise_tutorials_data/shortclips/stimuli/train_10.hdf
+- /home/hice1/amavle3/voxelwise_tutorials_data/shortclips/stimuli/train_11.hdf
+- /home/hice1/amavle3/voxelwise_tutorials_data/shortclips/stimuli/test.hdf
+---------------------------------------
+Begin Slurm Epilog: Apr-05-2026 20:20:51
+Job ID:        4605715
+User ID:       amavle3
+Account:       cse
+Job name:      contrast_hdf
+Resources:     cpu=16,mem=128G,node=1
+Rsrc Used:     cput=00:06:08,vmem=0,walltime=00:00:23,mem=284788K,energy_used=0
+Partition:     coc-cpu
+QOS:           coc-ice
+Nodes:         atl1-1-02-003-19-2
+---------------------------------------

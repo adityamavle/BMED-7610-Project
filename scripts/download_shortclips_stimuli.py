@@ -11,19 +11,19 @@ from voxelwise_tutorials.io import download_datalad, get_data_home
 
 
 DATAFILES = [
+    "stimuli/train_00.hdf",
     "stimuli/train_01.hdf",
-    # "stimuli/test.hdf",
-    # "stimuli/train_00.hdf",
-    # "stimuli/train_02.hdf",
-    # "stimuli/train_03.hdf",
-    # "stimuli/train_04.hdf",
-    # "stimuli/train_05.hdf",
-    # "stimuli/train_06.hdf",
-    # "stimuli/train_07.hdf",
-    # "stimuli/train_08.hdf",
-    # "stimuli/train_09.hdf",
-    # "stimuli/train_10.hdf",
-    # "stimuli/train_11.hdf",
+    "stimuli/train_02.hdf",
+    "stimuli/train_03.hdf",
+    "stimuli/train_04.hdf",
+    "stimuli/train_05.hdf",
+    "stimuli/train_06.hdf",
+    "stimuli/train_07.hdf",
+    "stimuli/train_08.hdf",
+    "stimuli/train_09.hdf",
+    "stimuli/train_10.hdf",
+    "stimuli/train_11.hdf",
+    "stimuli/test.hdf",
 ]
 SOURCE = "https://gin.g-node.org/gallantlab/shortclips"
 

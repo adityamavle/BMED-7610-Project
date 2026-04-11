@@ -1,0 +1,22 @@
+---------------------------------------
+Begin Slurm Prolog: Apr-07-2026 13:16:48
+Job ID:    4622387
+User ID:   amavle3
+Account:   cse
+Job name:  flow_hdf
+Partition: coc-cpu
+QOS:       coc-ice
+---------------------------------------
+[2026-04-07T13:32:16.520] error: *** JOB 4622387 ON atl1-1-02-003-19-2 CANCELLED AT 2026-04-07T13:32:16 DUE to SIGNAL Terminated ***
+---------------------------------------
+Begin Slurm Epilog: Apr-07-2026 13:32:19
+Job ID:        4622387
+User ID:       amavle3
+Account:       cse
+Job name:      flow_hdf
+Resources:     cpu=16,mem=128G,node=1
+Rsrc Used:     cput=04:08:32,vmem=0,walltime=00:15:32,mem=11013588K,energy_used=0
+Partition:     coc-cpu
+QOS:           coc-ice
+Nodes:         atl1-1-02-003-19-2
+---------------------------------------

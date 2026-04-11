@@ -1,0 +1,53 @@
+---------------------------------------
+Begin Slurm Prolog: Apr-07-2026 13:33:32
+Job ID:    4622521
+User ID:   amavle3
+Account:   cse
+Job name:  flow_hdf
+Partition: coc-cpu
+QOS:       coc-ice
+---------------------------------------
+Processing train_00.hdf ...
+  TR shape=(300, 113), total_seconds=264.23
+Processing train_01.hdf ...
+  TR shape=(300, 113), total_seconds=253.75
+Processing train_02.hdf ...
+  TR shape=(300, 113), total_seconds=255.84
+Processing train_03.hdf ...
+  TR shape=(300, 113), total_seconds=253.21
+Processing train_04.hdf ...
+  TR shape=(300, 113), total_seconds=248.99
+Processing train_05.hdf ...
+  TR shape=(300, 113), total_seconds=254.51
+Processing train_06.hdf ...
+  TR shape=(300, 113), total_seconds=254.53
+Processing train_07.hdf ...
+  TR shape=(300, 113), total_seconds=256.24
+Processing train_08.hdf ...
+  TR shape=(300, 113), total_seconds=250.85
+Processing train_09.hdf ...
+  TR shape=(300, 113), total_seconds=255.18
+Processing train_10.hdf ...
+  TR shape=(300, 113), total_seconds=249.54
+Processing train_11.hdf ...
+  TR shape=(300, 113), total_seconds=249.58
+Processing test.hdf ...
+  TR shape=(270, 113), total_seconds=215.56
+
+Saved optical-flow feature space to: /home/hice1/amavle3/scratch/voxelwise_tutorials_data/shortclips/features/optical_flow.hdf
+X_train shape: (3600, 113)
+X_test shape: (270, 113)
+run_onsets: [0, 300, 600, 900, 1200, 1500, 1800, 2100, 2400, 2700, 3000, 3300]
+Total extraction time (all runs): 3262.00 seconds
+---------------------------------------
+Begin Slurm Epilog: Apr-07-2026 14:28:44
+Job ID:        4622521
+User ID:       amavle3
+Account:       cse
+Job name:      flow_hdf
+Resources:     cpu=16,mem=128G,node=1
+Rsrc Used:     cput=14:43:12,vmem=0,walltime=00:55:12,mem=8714748K,energy_used=0
+Partition:     coc-cpu
+QOS:           coc-ice
+Nodes:         atl1-1-01-005-4-1
+---------------------------------------

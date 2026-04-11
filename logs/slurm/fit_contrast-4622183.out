@@ -1,0 +1,45 @@
+---------------------------------------
+Begin Slurm Prolog: Apr-07-2026 12:33:52
+Job ID:    4622183
+User ID:   amavle3
+Account:   cse
+Job name:  fit_contrast
+Partition: coc-cpu
+QOS:       coc-ice
+---------------------------------------
+/storage/ice1/1/1/amavle3/envs/neuro_env/lib/python3.11/site-packages/himalaya/backend/_utils.py:66: UserWarning: Setting backend to torch_cuda failed: PyTorch not installed..Falling back to numpy backend.
+  warnings.warn(f"Setting backend to {backend} failed: {str(error)}."
+/storage/ice1/1/1/amavle3/envs/neuro_env/lib/python3.11/site-packages/himalaya/kernel_ridge/_sklearn_api.py:499: UserWarning: Solving linear kernel ridge is slower than solving ridge when n_samples > n_features (here 3600 > 148). Using himalaya.ridge.RidgeCV would be faster. Use warn=False to silence this warning.
+  warnings.warn(
+/home/hice1/amavle3/BMED-7610-Project/src/shortclips_baseline/feature_model.py:155: UserWarning: This figure includes Axes that are not compatible with tight_layout, so results might be incorrect.
+  ax.figure.tight_layout()
+/home/hice1/amavle3/BMED-7610-Project/src/shortclips_baseline/feature_model.py:217: UserWarning: This figure includes Axes that are not compatible with tight_layout, so results might be incorrect.
+  ax.figure.tight_layout()
+/home/hice1/amavle3/BMED-7610-Project/src/shortclips_baseline/feature_model.py:238: UserWarning: This figure includes Axes that are not compatible with tight_layout, so results might be incorrect.
+  plt.tight_layout()
+/home/hice1/amavle3/scratch/voxelwise_tutorials_data/shortclips
+(n_samples_train, n_voxels) = (3600, 84038)
+(n_repeats, n_samples_test, n_voxels) = (10, 270, 84038)
+(n_samples_test, n_voxels) = (270, 84038)
+(n_samples_train, n_features) = (3600, 37)
+(n_samples_test, n_features) = (270, 37)
+[   0  300  600  900 1200 1500 1800 2100 2400 2700 3000 3300]
+<module 'himalaya.backend.numpy' from '/storage/ice1/1/1/amavle3/envs/neuro_env/lib/python3.11/site-packages/himalaya/backend/numpy.py'>
+(n_voxels,) = (84038,)
+(n_delays * n_features, n_voxels) = (148, 84038)
+(n_delays, n_features, n_voxels) = (4, 37, 84038)
+(n_features, n_voxels) = (37, 84038)
+(n_components, n_features) = (4, 37)
+PCA explained variance = [0.39620477 0.16431896 0.07960848 0.05353613]
+---------------------------------------
+Begin Slurm Epilog: Apr-07-2026 12:37:36
+Job ID:        4622183
+User ID:       amavle3
+Account:       cse
+Job name:      fit_contrast
+Resources:     cpu=16,mem=128G,node=1
+Rsrc Used:     cput=00:59:44,vmem=0,walltime=00:03:44,mem=11514960K,energy_used=0
+Partition:     coc-cpu
+QOS:           coc-ice
+Nodes:         atl1-1-02-012-8-1
+---------------------------------------

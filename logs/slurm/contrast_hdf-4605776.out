@@ -1,0 +1,53 @@
+---------------------------------------
+Begin Slurm Prolog: Apr-05-2026 21:42:32
+Job ID:    4605776
+User ID:   amavle3
+Account:   cse
+Job name:  contrast_hdf
+Partition: coc-cpu
+QOS:       coc-ice
+---------------------------------------
+Processing train_00.hdf ...
+  TR shape=(300, 37), total_seconds=253.67
+Processing train_01.hdf ...
+  TR shape=(300, 37), total_seconds=250.35
+Processing train_02.hdf ...
+  TR shape=(300, 37), total_seconds=251.02
+Processing train_03.hdf ...
+  TR shape=(300, 37), total_seconds=248.94
+Processing train_04.hdf ...
+  TR shape=(300, 37), total_seconds=246.24
+Processing train_05.hdf ...
+  TR shape=(300, 37), total_seconds=251.74
+Processing train_06.hdf ...
+  TR shape=(300, 37), total_seconds=251.89
+Processing train_07.hdf ...
+  TR shape=(300, 37), total_seconds=254.62
+Processing train_08.hdf ...
+  TR shape=(300, 37), total_seconds=247.94
+Processing train_09.hdf ...
+  TR shape=(300, 37), total_seconds=251.97
+Processing train_10.hdf ...
+  TR shape=(300, 37), total_seconds=245.04
+Processing train_11.hdf ...
+  TR shape=(300, 37), total_seconds=245.69
+Processing test.hdf ...
+  TR shape=(270, 37), total_seconds=211.28
+
+Saved contrast feature space to: /home/hice1/amavle3/scratch/voxelwise_tutorials_data/shortclips/features/contrast.hdf
+X_train shape: (3600, 37)
+X_test shape: (270, 37)
+run_onsets: [0, 300, 600, 900, 1200, 1500, 1800, 2100, 2400, 2700, 3000, 3300]
+Total extraction time (all runs): 3210.38 seconds
+---------------------------------------
+Begin Slurm Epilog: Apr-05-2026 22:36:45
+Job ID:        4605776
+User ID:       amavle3
+Account:       cse
+Job name:      contrast_hdf
+Resources:     cpu=16,mem=128G,node=1
+Rsrc Used:     cput=14:28:32,vmem=0,walltime=00:54:17,mem=10714108K,energy_used=0
+Partition:     coc-cpu
+QOS:           coc-ice
+Nodes:         atl1-1-02-003-19-2
+---------------------------------------

@@ -1,0 +1,36 @@
+---------------------------------------
+Begin Slurm Prolog: Apr-06-2026 22:51:00
+Job ID:    4618937
+User ID:   amavle3
+Account:   cse
+Job name:  fit_contrast
+Partition: coc-cpu
+QOS:       coc-ice
+---------------------------------------
+/storage/ice1/1/1/amavle3/envs/neuro_env/lib/python3.11/site-packages/himalaya/backend/_utils.py:66: UserWarning: Setting backend to torch_cuda failed: PyTorch not installed..Falling back to numpy backend.
+  warnings.warn(f"Setting backend to {backend} failed: {str(error)}."
+/storage/ice1/1/1/amavle3/envs/neuro_env/lib/python3.11/site-packages/himalaya/kernel_ridge/_sklearn_api.py:499: UserWarning: Solving linear kernel ridge is slower than solving ridge when n_samples > n_features (here 3600 > 148). Using himalaya.ridge.RidgeCV would be faster. Use warn=False to silence this warning.
+  warnings.warn(
+/home/hice1/amavle3/BMED-7610-Project/scripts/fit_contrast_model.py:111: UserWarning: This figure includes Axes that are not compatible with tight_layout, so results might be incorrect.
+  ax.figure.tight_layout()
+/home/hice1/amavle3/scratch/voxelwise_tutorials_data/shortclips
+(n_samples_train, n_voxels) = (3600, 84038)
+(n_repeats, n_samples_test, n_voxels) = (10, 270, 84038)
+(n_samples_test, n_voxels) = (270, 84038)
+(n_samples_train, n_features) = (3600, 37)
+(n_samples_test, n_features) = (270, 37)
+[   0  300  600  900 1200 1500 1800 2100 2400 2700 3000 3300]
+<module 'himalaya.backend.numpy' from '/storage/ice1/1/1/amavle3/envs/neuro_env/lib/python3.11/site-packages/himalaya/backend/numpy.py'>
+(n_voxels,) = (84038,)
+---------------------------------------
+Begin Slurm Epilog: Apr-06-2026 22:54:46
+Job ID:        4618937
+User ID:       amavle3
+Account:       cse
+Job name:      fit_contrast
+Resources:     cpu=16,mem=128G,node=1
+Rsrc Used:     cput=01:01:20,vmem=0,walltime=00:03:50,mem=11497048K,energy_used=0
+Partition:     coc-cpu
+QOS:           coc-ice
+Nodes:         atl1-1-01-005-4-2
+---------------------------------------

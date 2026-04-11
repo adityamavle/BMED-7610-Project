@@ -1,0 +1,42 @@
+{
+  "stimuli_file": "/home/hice1/amavle3/scratch/voxelwise_tutorials_data/shortclips/stimuli/train_00.hdf",
+  "raw_shape": [
+    9000,
+    512,
+    512,
+    3
+  ],
+  "resized_luminance_shape": [
+    9000,
+    96,
+    96
+  ],
+  "optical_flow_framewise_shape": [
+    9000,
+    113
+  ],
+  "optical_flow_tr_shape": [
+    300,
+    113
+  ],
+  "grid_shape": [
+    6,
+    6
+  ],
+  "flow_params": {
+    "pyr_scale": 0.5,
+    "levels": 3,
+    "winsize": 15,
+    "iterations": 3,
+    "poly_n": 5,
+    "poly_sigma": 1.2,
+    "flags": 0
+  },
+  "luminance_seconds": 255.09823532775044,
+  "optical_flow_seconds": 30.086801432073116,
+  "aggregation_seconds": 0.000654337927699089,
+  "total_seconds": 285.18569109775126,
+  "estimated_seconds_for_12_train_runs": 3422.228293173015,
+  "estimated_hours_for_12_train_runs": 0.9506189703258375,
+  "gpu_toggle_note": "This optical-flow benchmark uses OpenCV Farneback flow on the CPU. There is no built-in GPU toggle in this script."
+}

@@ -1,5 +1,4 @@
 import os
-import sys
 from pathlib import Path
 
 import matplotlib.pyplot as plt
@@ -62,6 +61,19 @@ def main() -> None:
     plt.tight_layout()
     plt.savefig(OUTPUT_DIR / f"{subject}_ev_histogram.png", dpi=150)
     plt.close()
+
+    mapper_file = os.path.join(directory, "mappers", f"{subject}_mappers.hdf")
+    try:
+        from voxelwise_tutorials.viz import plot_flatmap_from_mapper
+    except Exception as exc:
+        plot_flatmap_from_mapper = None
+        print(f"Skipping flatmap plotting because a visualization dependency is missing: {exc}")
+
+    if plot_flatmap_from_mapper is not None:
+        ax = plot_flatmap_from_mapper(ev, mapper_file, vmin=0, vmax=0.7)
+        ax.figure.tight_layout()
+        ax.figure.savefig(OUTPUT_DIR / f"{subject}_ev_flatmap.png", dpi=150)
+        plt.close(ax.figure)
 
     summary = {
         "subject": subject,
