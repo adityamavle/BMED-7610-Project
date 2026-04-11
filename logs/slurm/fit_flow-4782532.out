@@ -1,0 +1,46 @@
+---------------------------------------
+Begin Slurm Prolog: Apr-10-2026 20:20:29
+Job ID:    4782532
+User ID:   amavle3
+Account:   cse
+Job name:  fit_flow
+Partition: coc-cpu
+QOS:       coc-ice
+---------------------------------------
+/storage/ice1/1/1/amavle3/envs/neuro_env/lib/python3.11/site-packages/himalaya/backend/_utils.py:66: UserWarning: Setting backend to torch_cuda failed: PyTorch not installed..Falling back to numpy backend.
+  warnings.warn(f"Setting backend to {backend} failed: {str(error)}."
+/storage/ice1/1/1/amavle3/envs/neuro_env/lib/python3.11/site-packages/himalaya/kernel_ridge/_sklearn_api.py:499: UserWarning: Solving linear kernel ridge is slower than solving ridge when n_samples > n_features (here 3600 > 452). Using himalaya.ridge.RidgeCV would be faster. Use warn=False to silence this warning.
+  warnings.warn(
+/home/hice1/amavle3/BMED-7610-Project/src/shortclips_baseline/feature_model.py:190: UserWarning: This figure includes Axes that are not compatible with tight_layout, so results might be incorrect.
+  ax.figure.tight_layout()
+/home/hice1/amavle3/BMED-7610-Project/src/shortclips_baseline/feature_model.py:252: UserWarning: This figure includes Axes that are not compatible with tight_layout, so results might be incorrect.
+  ax.figure.tight_layout()
+/home/hice1/amavle3/BMED-7610-Project/src/shortclips_baseline/feature_model.py:273: UserWarning: This figure includes Axes that are not compatible with tight_layout, so results might be incorrect.
+  plt.tight_layout()
+/home/hice1/amavle3/scratch/voxelwise_tutorials_data/shortclips
+(n_samples_train, n_voxels) = (3600, 84038)
+(n_repeats, n_samples_test, n_voxels) = (10, 270, 84038)
+response_preprocessing = visual_zscore
+(n_samples_test, n_voxels) = (270, 84038)
+(n_samples_train, n_features) = (3600, 113)
+(n_samples_test, n_features) = (270, 113)
+[   0  300  600  900 1200 1500 1800 2100 2400 2700 3000 3300]
+<module 'himalaya.backend.numpy' from '/storage/ice1/1/1/amavle3/envs/neuro_env/lib/python3.11/site-packages/himalaya/backend/numpy.py'>
+(n_voxels,) = (84038,)
+(n_delays * n_features, n_voxels) = (452, 84038)
+(n_delays, n_features, n_voxels) = (4, 113, 84038)
+(n_features, n_voxels) = (113, 84038)
+(n_components, n_features) = (4, 113)
+PCA explained variance = [0.44893855 0.10398625 0.06282169 0.05330967]
+---------------------------------------
+Begin Slurm Epilog: Apr-10-2026 20:25:06
+Job ID:        4782532
+User ID:       amavle3
+Account:       cse
+Job name:      fit_flow
+Resources:     cpu=16,mem=128G,node=1
+Rsrc Used:     cput=01:14:40,vmem=0,walltime=00:04:40,mem=11482472K,energy_used=0
+Partition:     coc-cpu
+QOS:           coc-ice
+Nodes:         atl1-1-01-005-1-2
+---------------------------------------

@@ -25,4 +25,4 @@ AGENTS.md
 # Local tool caches
 .datalad/
 
-*.npyI
+*.npy
